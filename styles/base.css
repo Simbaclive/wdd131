@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1b4332;
-    --accent-color: #40916c;
+    --accent-color: #1e5f40;
     --text-color: #2d3748;
     --light-bg: #f8f9fa;
     --card-bg: #ffffff;
@@ -90,6 +90,20 @@ main h1 {
     height: auto;
     margin: 1rem auto;
     border-radius: 4px;
+}
+
+.card ul {
+    padding-left: 1.2rem;
+}
+
+.card a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card a:hover {
+    text-decoration: underline;
 }
 
 footer {
