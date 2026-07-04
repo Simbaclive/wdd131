@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Clive Musika</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course landing page for [Your Name]. Features assignments, resource links, and a layout showcasing core web development principles including HTML, CSS Grid, Flexbox, and JavaScript.">
+    <meta name="author" content="Clive Musika">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Clive Musika</h1>
+        
+        <div class="grid-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="images/profile.png" alt="Photo of Clive]" width="200">
+                <p>Hello! I am a student taking WDD 131 to master dynamic web fundamentals. I enjoy building clean, functional websites.</p>
+            </section>
+
+            <section class="card">
+                <h2>Course Information</h2>
+                <p><strong>Location:</strong> Cape Town, South Africa</p>
+                <p><strong>Focus:</strong> Learning semantic HTML, advanced CSS layout techniques like Flexbox and Grid, and client-side JavaScript execution.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Clive | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
