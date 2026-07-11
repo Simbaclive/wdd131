@@ -1,11 +1,27 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background-color: #1b4332;
     color: white;
     padding: 1rem;
     display: flex;
-    justify-content: space-between; /* This forces the h1 and #menu apart */
+    justify-content: space-between;
     align-items: center;
     position: relative;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
 }
 
 #menu {
@@ -13,13 +29,11 @@ header {
     color: white;
     text-decoration: none;
     cursor: pointer;
-    margin-left: auto; /* This pushes the element to the far right */
+    margin-left: auto;
 }
-
 
 #menu::before { content: "≡"; }
 #menu.open::before { content: "X"; }
-
 
 .navigation {
     display: none; 
@@ -28,8 +42,11 @@ header {
     width: 100%;
     margin: 0;
     padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
 }
-
 
 .navigation.open {
     display: block; 
@@ -48,28 +65,22 @@ header {
     background-color: #1b4332;
 }
 
-
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
-    margin-top: 1rem; 
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+
 footer {
-    background-color: #1b4332; 
+    background-color: #4a044e;
     color: white;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
 }
-
-footer p {
-    margin: 0.25rem 0;
-    font-size: 0.9rem;
-}
-
-#lastModified {
     font-weight: bold;
 }
