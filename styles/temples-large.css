@@ -1,0 +1,26 @@
+/* Larger view (Desktop) styling */
+@media screen and (min-width: 600px) {
+    
+    /* 1. Hide the hamburger menu button on larger screens */
+    #menu {
+        display: none;
+    }
+
+    /* 2. Display navigation items in a horizontal row */
+    .navigation {
+        display: flex !important; /* Force flex to override mobile display:none */
+        justify-content: flex-end; /* Align links to the right */
+        background-color: transparent; /* Remove background color for desktop */
+    }
+
+    /* 3. Style the navigation links for a horizontal bar */
+    .navigation li a {
+        border-top: none; /* Remove mobile border */
+        padding: 0 1rem;
+    }
+
+    /* 4. Change the gallery to a 3-column grid */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
