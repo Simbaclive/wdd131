@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #007749; 
+    --accent-color: #FFB81C;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (min-width: 800px) {
+    #weather h2::after {
+        content: " ⛅";
+    }
+}
