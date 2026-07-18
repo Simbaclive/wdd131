@@ -1,11 +1,11 @@
-/* Global variables for consistent design */
+
 :root {
     --primary-color: #007749;
     --accent-color: #FFB81C;
     --font-stack: sans-serif;
 }
 
-/* Base styles for the document */
+
 body {
     font-family: var(--font-stack);
     margin: 0;
