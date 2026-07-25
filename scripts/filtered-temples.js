@@ -97,7 +97,7 @@ function displayTemples(filteredTemples) {
     });
 }
 
-// Navigation Event Listeners
+
 document.getElementById("home").addEventListener("click", (e) => {
     e.preventDefault();
     pageTitle.textContent = "Home";
@@ -142,5 +142,5 @@ document.getElementById("small").addEventListener("click", (e) => {
     hamButton.classList.remove('open');
 });
 
-// Initial Render
+
 displayTemples(temples);
