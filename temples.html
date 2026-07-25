@@ -3,76 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Temple Album</title>
-    <meta name="description" content="A picture album of various temples showcasing responsive design.">
-    <meta name="author" content="Clive Musika">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>WDD 131 – Filtered Temple Album</title>
+    <meta name="description" content="A picture album of various temples showcasing responsive design and dynamic JavaScript filtering.">
+    <meta name="author" content="Anodumo">
     <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
     <script src="scripts/temples.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Temple Album</h1> 
-    <a id="menu" href="#"></a>
+        <a id="menu" href="#"></a>
         <nav>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2 align="center">Home</h2>
-        <div class="gallery">
-            <figure>
-                <img src="images/large-salt-lake.jpg" alt="Large Salt Lake Temple" loading="lazy" width="400" height="250">
-                <figcaption>Salt Lake Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/large-washington.jpg" alt="Large Washington D.C. Temple" loading="lazy" width="400" height="250">
-                <figcaption>Washington D.C. Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/new-bangkok.jpg" alt="New Bangkok Thailand Temple" loading="lazy" width="400" height="250">
-                <figcaption>Bangkok Thailand Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/new-brasilia.jpg" alt="New Brasília Brazil Temple" loading="lazy" width="400" height="250">
-                <figcaption>Brasília Brazil Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/new-pocatello.jpg" alt="New Pocatello Idaho Temple" loading="lazy" width="400" height="250">
-                <figcaption>Pocatello Idaho Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/old-logan-utah-temple.jpg" alt="Old Logan Utah Temple" loading="lazy" width="400" height="250">
-                <figcaption>Logan Utah Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/old-manti-temple.jpg" alt="Old Manti Utah Temple" loading="lazy" width="400" height="250">
-                <figcaption>Manti Utah Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/old-stgeorges.jpg" alt="Old St. George Utah Temple" loading="lazy" width="400" height="250">
-                <figcaption>St. George Utah Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/small-colonia.jpg" alt="Small Colonia Juárez Chihuahua Mexico Temple" loading="lazy" width="400" height="250">
-                <figcaption>Colonia Juárez Mexico Temple</figcaption>
-            </figure>
+        <h2>Home</h2>
+        <div class="res-grid" id="temple-card-container">
+        
         </div>
     </main>
 
     <footer>
-    <p>&copy;<span id="currentyear"></span> 🌺 Clive Musika 🌺 South Africa</p>
-    <p id="lastModified"></p>
-</footer>
+        <p>&copy;<span id="currentyear"></span> 🌺 Clive 🌺 South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
