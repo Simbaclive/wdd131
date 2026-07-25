@@ -7,14 +7,14 @@
     <meta name="description" content="A picture album of various temples showcasing responsive design and dynamic JavaScript filtering.">
     <meta name="author" content="Clive Musika">
     <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
     <script src="scripts/filtered-temples.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Temple Album</h1> 
-        <a id="menu" href="#"></a>
-        <nav> 
+        <h1>Temple Album</h1>
+        <a id="menu" href="#" aria-label="Navigation Menu"></a>
+        <nav>
             <ul class="navigation">
                 <li><a href="#" id="home">Home</a></li>
                 <li><a href="#" id="old">Old</a></li>
@@ -24,16 +24,14 @@
             </ul>
         </nav>
     </header>
-
+    
     <main>
         <h2>Home</h2>
-        <div class="res-grid" id="temple-card-container">
-        
-        </div>
+        <div class="res-grid"></div>
     </main>
 
     <footer>
-        <p>&copy;<span id="currentyear"></span> 🌺 Clive Musika 🌺 South Africa</p>
+        <p>&copy; <span id="currentyear"></span> | Clive Musika| South Africa</p>
         <p id="lastModified"></p>
     </footer>
 </body>
