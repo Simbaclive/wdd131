@@ -44,7 +44,7 @@ const temples = [
     location: "Pocatello, Idaho, United States",
     dedicated: "2021, November, 7",
     area: 88862,
-    imageUrl: "images/new-Pocatello.jpg"
+    imageUrl: "images/new-pocatello.jpg"
   },
   {
     templeName: "Logan Utah Temple",
@@ -65,7 +65,7 @@ const temples = [
     location: "St. George, Utah, United States",
     dedicated: "1877, April, 6",
     area: 143969,
-    imageUrl: "images/old-stGeorges.jpg"
+    imageUrl: "images/old-stgeorges.jpg"
   },
   {
     templeName: "Colonia Juárez Mexico Temple",
