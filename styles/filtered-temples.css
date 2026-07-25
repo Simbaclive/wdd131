@@ -17,11 +17,13 @@ header {
     margin-left: auto;
 }
 
+
 #menu::before { content: "≡"; }
 #menu.open::before { content: "X"; }
 
 .navigation {
-    display: none; 
+    display: flex;
+    flex-direction: column;
     list-style: none;
     background-color: #1e5f40;
     width: 100%;
@@ -29,6 +31,7 @@ header {
     padding: 0;
     flex-basis: 100%;
 }
+
 
 .navigation.open {
     display: flex; 
