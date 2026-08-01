@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Review Confirmation</title>
+    <meta name="description" content="Review submission confirmation page for product feedback.">
+    <meta name="author" content="Clive Musika">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Review Submitted!</h1>
+    </header>
+
+    <main class="confirmation-main">
+        <div class="confirmation-card">
+            <h2>Thank You for Your Feedback!</h2>
+            <p>Your product review has been successfully received.</p>
+            <p>Total reviews submitted: <strong id="reviews-counter">0</strong></p>
+            <p><a href="form.html" class="button-link">Submit Another Review</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Clive Musika | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+       
+        let reviewCount = Number(localStorage.getItem("reviewCount-ls")) || 0;
+        reviewCount++;
+        localStorage.setItem("reviewCount-ls", reviewCount);
+
+        const counterDisplay = document.querySelector("#reviews-counter");
+        if (counterDisplay) {
+            counterDisplay.textContent = reviewCount;
+        }
+
+     
+        document.querySelector("#currentyear").textContent = new Date().getFullYear();
+        document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
+    </script>
+</body>
+</html>
