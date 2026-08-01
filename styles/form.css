@@ -185,3 +185,10 @@ footer {
 footer p {
     margin: 0.3rem 0;
 }
+
+
+@media screen and (min-width: 768px) {
+    form {
+        padding: 2.5rem;
+    }
+}
