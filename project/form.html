@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Tech &amp; Coding Hub – Join &amp; Review</title>
+    <meta name="description" content="Submit a review or sign up for community membership at Metro Tech Hub.">
+    <meta name="author" content="Clive Musika">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Metro Tech Hub</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meetups.html">Meetups</a></li>
+                <li><a href="form.html" class="active">Join / Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Community Program</legend>
+                <div class="form-item">
+                    <label for="productName">Select Interest <span class="required">*</span></label>
+                    <select id="productName" name="product" required>
+                        <option value="" disabled selected>Select a program ...</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Rating <span class="required">*</span></legend>
+                <div class="rating-group">
+                    <label for="rating1"><input type="radio" id="rating1" name="rating" value="1" required> ☆</label>
+                    <label for="rating2"><input type="radio" id="rating2" name="rating" value="2" required> ☆☆</label>
+                    <label for="rating3"><input type="radio" id="rating3" name="rating" value="3" required> ☆☆☆</label>
+                    <label for="rating4"><input type="radio" id="rating4" name="rating" value="4" required> ☆☆☆☆</label>
+                    <label for="rating5"><input type="radio" id="rating5" name="rating" value="5" required> ☆☆☆☆☆</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Date of Registration / Visit</legend>
+                <div class="form-item">
+                    <label for="installDate">Date <span class="required">*</span></label>
+                    <input type="date" id="installDate" name="installDate" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Useful Features (Check all that apply)</legend>
+                <div class="checkbox-group">
+                    <label for="feature1"><input type="checkbox" id="feature1" name="features" value="mentorship"> Mentorship</label>
+                    <label for="feature2"><input type="checkbox" id="feature2" name="features" value="workshops"> Workshops</label>
+                    <label for="feature3"><input type="checkbox" id="feature3" name="features" value="networking"> Networking</label>
+                    <label for="feature4"><input type="checkbox" id="feature4" name="features" value="resources"> Resource Library</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Feedback</legend>
+                <div class="form-item">
+                    <label for="reviewText">Written Comments (Optional)</label>
+                    <textarea id="reviewText" name="review" rows="4"></textarea>
+                </div>
+                <div class="form-item">
+                    <label for="userName">Your Name (Optional)</label>
+                    <input type="text" id="userName" name="userName">
+                </div>
+            </fieldset>
+
+            <div class="form-submit">
+                <input type="submit" value="Submit Registration">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Metro Tech Community Hub | Clive Musika</p>
+        <p><a href="references.html">Image &amp; Resource References</a></p>
+    </footer>
+</body>
+</html>
